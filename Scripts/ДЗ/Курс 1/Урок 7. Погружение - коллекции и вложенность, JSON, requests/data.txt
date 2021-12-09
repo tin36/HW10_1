@@ -1,0 +1,9 @@
+{
+"name": "Alice",
+"is_online": true,
+"hobbies": {"1": "cryptography",
+            "2": "coding",
+            "3": "outdoor activities"}}
+
+
+{"que": "How many days do we have in a week?"

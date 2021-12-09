@@ -1,0 +1,482 @@
+{
+  "environment" : "unittest",
+  "summary" : "Skypro Lesson 10 part 1",
+  "title" : "Lesson10_part1_edutools_source",
+  "authors" : [
+    "Sky.pro"
+  ],
+  "programming_language" : "Python",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "lesson",
+      "task_list" : [
+        {
+          "choiceOptions" : [
+            {
+              "text" : "Приложение изучено",
+              "status" : "CORRECT"
+            }
+          ],
+          "isMultipleChoice" : false,
+          "name" : "inspect_original (key)",
+          "files" : {
+            "app.py" : {
+              "name" : "app.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "from flask import Flask\n\napp = Flask(__name__)\n\n\n@app.route('/hello/')\n@app.route('/hello/<first_name>/')\n@app.route('/hello/<first_name>/<last_name>/')\ndef hello(first_name=None, last_name=None):\n    name = 'Anonymous'\n\n    if first_name and last_name:\n        name = f'{first_name} {last_name}'\n    elif first_name:\n        name = first_name\n\n    return f'Hello {name}!'\n\n\nif __name__ == '__main__':\n    app.run()\n"
+            },
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            }
+          },
+          "description_text" : "<html>\n\n<h2>Задача 1</h2>\n\n<p>\n    У вас есть небольшое приложение app.py, которое получает из сегментов маршрута имя и фамилию пользователя, и\n    приветствует пользователя в разной форме в зависимости от переданных параметров.\n    Запустите его, изучите код и ответьте на вопросы.\n</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "choice"
+        },
+        {
+          "choiceOptions" : [
+            {
+              "text" : "Hello Anonymous!",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "Not found",
+              "status" : "CORRECT"
+            },
+            {
+              "text" : "Hello None!",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "Hello None None!",
+              "status" : "INCORRECT"
+            }
+          ],
+          "isMultipleChoice" : false,
+          "name" : "inspect_1 (key)",
+          "files" : {
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : ""
+            },
+            "app.py" : {
+              "name" : "app.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "from flask import Flask\n\napp = Flask(__name__)\n\n\n@app.route('/hello/')\n@app.route('/hello/<first_name>/')\n@app.route('/hello/<first_name>/<last_name>/')\ndef hello(first_name=None, last_name=None):\n    name = 'Anonymous'\n\n    if first_name and last_name:\n        name = f'{first_name} {last_name}'\n    elif first_name:\n        name = first_name\n\n    return f'Hello {name}!'\n\n\nif __name__ == '__main__':\n    app.run()\n"
+            }
+          },
+          "description_text" : "<html>\n<h2>Задача на изучение кода - 1</h2>\n\n<p>\n    Вернитесь к коду задачи 1 и ответьте на вопрос: <br>\n    Что выведет урл <i>http://127.0.0.1:5000/</i>?\n</p>\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "choice"
+        },
+        {
+          "choiceOptions" : [
+            {
+              "text" : "Hello Denis None!",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "Not found",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "Hello None Denis!",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "Hello Denis!",
+              "status" : "CORRECT"
+            }
+          ],
+          "isMultipleChoice" : false,
+          "name" : "inspect_2 (key)",
+          "files" : {
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : ""
+            },
+            "app.py" : {
+              "name" : "app.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "from flask import Flask\n\napp = Flask(__name__)\n\n\n@app.route('/hello/')\n@app.route('/hello/<first_name>/')\n@app.route('/hello/<first_name>/<last_name>/')\ndef hello(first_name=None, last_name=None):\n    name = 'Anonymous'\n\n    if first_name and last_name:\n        name = f'{first_name} {last_name}'\n    elif first_name:\n        name = first_name\n\n    return f'Hello {name}!'\n\n\nif __name__ == '__main__':\n    app.run()\n"
+            }
+          },
+          "description_text" : "<html>\n\n<h2>Задача на изучение кода - 2</h2>\n\n<p>\n    Вернитесь к коду задачи 1 и ответьте на вопрос: <br>\n    Что выведет урл <i>http://127.0.0.1:5000/hello/Denis/</i>?\n</p>\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "choice"
+        },
+        {
+          "choiceOptions" : [
+            {
+              "text" : "http://127.0.0.1:5000/Python/Master/",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "http://127.0.0.1:5000/hello/Python/Master/",
+              "status" : "CORRECT"
+            },
+            {
+              "text" : "http://127.0.0.1:5000/Master/Python/",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "http://127.0.0.1:5000/hello/Master/Python/",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "http://127.0.0.1:5000/Python Master/",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "http://127.0.0.1:5000/hello/Python Master/",
+              "status" : "CORRECT"
+            }
+          ],
+          "isMultipleChoice" : true,
+          "name" : "inspect_3 (key)",
+          "files" : {
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : ""
+            },
+            "app.py" : {
+              "name" : "app.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "from flask import Flask\n\napp = Flask(__name__)\n\n\n@app.route('/hello/')\n@app.route('/hello/<first_name>/')\n@app.route('/hello/<first_name>/<last_name>/')\ndef hello(first_name=None, last_name=None):\n    name = 'Anonymous'\n\n    if first_name and last_name:\n        name = f'{first_name} {last_name}'\n    elif first_name:\n        name = first_name\n\n    return f'Hello {name}!'\n\n\nif __name__ == '__main__':\n    app.run()\n"
+            }
+          },
+          "description_text" : "<html>\n\n<h2>Задача на изучение кода - 3</h2>\n\n<p>\n    Вернитесь к коду задачи 1 и ответьте на вопрос: <br>\n    Какие урлы выведут сообщение <i>Hello Python Master!</i>?\n</p>\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "choice"
+        },
+        {
+          "name" : "helloworld (key)",
+          "files" : {
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "from flask import Flask\n\napp = Flask(__name__)\n\n\ndef index():\n    pass\n\n\nif __name__ == '__main__':\n    app.run()\n"
+            },
+            "tests/test_task.py" : {
+              "name" : "tests/test_task.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from task import app\nfrom lesson.utils import SkyproTestCase\n\nclass TestCase(SkyproTestCase):\n\n    def get_key(self):\n        return \"599292\"\n\n    def test_index(self):\n        with app.test_client() as client:\n            resp = client.get('/')\n            self.assertNotEqual(404, resp.status_code, msg='Представление должно работать по урлу /')\n\n            expected = 'Hello world'\n\n            self.assertEqual(expected, resp.get_data(True), msg=f'Представление должно возвращать {expected}')\n"
+            },
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "tests/__init__.py" : {
+              "name" : "tests/__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            }
+          },
+          "description_text" : "---\n---\n\n# Задача \"Привет, мир\"\n\nРеализуйте минимальное приложение с одним представлением index, которое обрабатывает урл / и возвращает <i>Hello world</i>.\n\n### Тесты проверят:\n\n* Запрос на / возвращает статус-код 200\n* Запрос на / возвращает тело ответа Hello world\n",
+          "description_format" : "MD",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "simple_multiroutes (key)",
+          "files" : {
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "tests/test_task.py" : {
+              "name" : "tests/test_task.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from task import app\nfrom lesson.utils import SkyproTestCase\n\nclass TestCase(SkyproTestCase):\n\n    def get_key(self):\n        return \"231045\"\n\n    def test_sort(self):\n        with app.test_client() as client:\n\n            #  проверка статуса\n\n            path = '/'\n            resp = client.get(path)\n            self.assertEqual(200, resp.status_code, msg=f'Приложение не обрабатывает запрос к {path}')\n\n            path = '/employees/'\n            resp = client.get(path)\n            self.assertEqual(200, resp.status_code, msg=f'Приложение не обрабатывает запрос к {path}')\n\n            path = '/employees/3/'\n            resp = client.get(path)\n            self.assertEqual(200, resp.status_code, msg=f'Приложение не обрабатывает запрос к {path}')\n\n\n            # ожидание и реальность\n\n            path = '/'\n            expected = 'Тут будет главная'\n            resp = client.get(path)\n            self.assertEqual(expected, resp.get_data(True),\n                             msg=f'Неверный ответ при запросе к {path} должно быть {expected}')\n\n"
+            },
+            "tests/__init__.py" : {
+              "name" : "tests/__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "from flask import Flask, request\nimport json\n\napp = Flask(__name__)\n\n\ndef get_index():\n    return \"\", 200\n\ndef get_employees():\n    return \"\", 200\n\ndef get_employee(uid):\n    return \"\", 200\n\nif __name__ == '__main__':\n    app.run()\n\n"
+            }
+          },
+          "description_text" : "## Задачка 1 (на мультироуты) \n\nСоздайте приложение, которое обрабатывает такие маршруты: \n\n* По маршруту  `/`   будет вывести \n`Тут будет главная`\n\n* По маршруту `/employees/` вывести \n`Тут будет информация о сотрудниках`\n\n* По маршруту `/` employees/(номер сотрудника) вывести `Тут будет информация об одном из сотрудников` \n\n### Тесты проверят:\n\n* Запрос на / возвращает статус-код 200\n* Запрос на /employees/ возвращает статус-код 200\n* Запрос на /employees/3/ возвращает статус-код 200\n\n* Запрос на / возвращает тело ответа `Тут будет главная`\n\n",
+          "description_format" : "MD",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "simple_operations (key)",
+          "files" : {
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "from flask import Flask, request\napp = Flask(__name__)\n\nexpenses = [1240, 60, 230, 20, 310]\n\n# TODO Напишите код представлений тут\n\nif __name__ == '__main__':\n    app.run()\n"
+            },
+            "tests/test_task.py" : {
+              "name" : "tests/test_task.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from task import app\nfrom lesson.utils import SkyproTestCase\n\nclass TestCase(SkyproTestCase):\n\n    def get_key(self):\n        return \"865549\"\n\n\n    def test_sort(self):\n        with app.test_client() as client:\n\n            #  проверка статуса\n\n            path = '/all/'\n            resp = client.get(path)\n            self.assertEqual(200, resp.status_code, msg=f'Приложение не обрабатывает запрос к {path}')\n\n            path = '/min/'\n            resp = client.get(path)\n            self.assertEqual(200, resp.status_code, msg=f'Приложение не обрабатывает запрос к {path}')\n\n            path = '/max/'\n            resp = client.get(path)\n            self.assertEqual(200, resp.status_code, msg=f'Приложение не обрабатывает запрос к {path}')\n\n            path = '/avg/'\n            resp = client.get(path)\n            self.assertEqual(200, resp.status_code, msg=f'Приложение не обрабатывает запрос к {path}')\n\n\n            # ожидание и реальность\n\n            path = '/all/'\n            expected = '1240 60 230 20 310'\n            resp = client.get(path)\n            self.assertEqual(expected, resp.get_data(True),\n                             msg=f'Неверный ответ при запросе к {path} должно быть {expected}')\n\n\n            # ожидание и реальность\n\n\n            path = '/max/'\n            expected = '1240'\n            resp = client.get(path)\n            self.assertEqual(expected, resp.get_data(True),\n                             msg=f'Неверный ответ при запросе к {path} должно быть {expected}')\n\n            path = '/min/'\n            expected = '20'\n            resp = client.get(path)\n            self.assertEqual(expected, resp.get_data(True),\n                             msg=f'Неверный ответ при запросе к {path} должно быть {expected}')\n\n\n            path = '/avg/'\n            expected = '372'\n            resp = client.get(path)\n            self.assertEqual(expected, resp.get_data(True),\n                             msg=f'Неверный ответ при запросе к {path} должно быть {expected}')\n"
+            },
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "tests/__init__.py" : {
+              "name" : "tests/__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            }
+          },
+          "description_text" : "# Задачка 2 (на мультироуты с данными)\n\nУ вас есть список трат за определенный день. Список хранится так:\n\n`expenses = [1240, 60, 230, 20, 310] `\n\nНапишите приложение со специальными представлениями для трат.\n\n### Как работают тесты\n\n`/all` Вывводит все траты через пробел, например\n\n`1240 60 230 20 310`\n\n` /max ` Выводит самую крупную трату, например `1240`\n\n` /min ` Выводит самую мелкую трату, например `20`\n\n\n` /avg ` Вывести среднюю трату, например  `372`\n\n",
+          "description_format" : "MD",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "simple_query",
+          "files" : {
+            "tests/test_task.py" : {
+              "name" : "tests/test_task.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from task import app\nfrom lesson.utils import SkyproTestCase\n\nclass TestCase(SkyproTestCase):\n\n    def get_key(self):\n        return \"375645\"\n\n\n    def test_sort(self):\n        with app.test_client() as client:\n\n            #  проверка статуса\n\n            path = '/search/?s=а'\n            expected = '...'\n            resp = client.get(path)\n            self.assertEqual(200, resp.status_code, msg=f'Приложение не обрабатывает запрос к {path}')\n\n\n            # ожидание и реальность\n\n            path = '/search/?s=мос'\n            expected = 'Москва'\n            resp = client.get(path)\n            self.assertEqual(expected, resp.get_data(True),\n                             msg=f'Неверный ответ при запросе к {path} должно быть {expected}')\n\n\n            # ожидание и реальность\n\n            path = '/search/?s=кра'\n            expected = 'Красноярск, Краснодар'\n            resp = client.get(path)\n            self.assertEqual(expected, resp.get_data(True),\n                             msg=f'Неверный ответ при запросе к {path} должно быть {expected}')\n\n\n\n            # ожидание и реальность\n\n            path = '/search/?s=санкт'\n            expected = 'Санкт-Петербург'\n            resp = client.get(path)\n            self.assertEqual(expected, resp.get_data(True),\n                             msg=f'Неверный ответ при запросе к {path} должно быть {expected}')\n\n"
+            },
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "tests/__init__.py" : {
+              "name" : "tests/__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "from flask import Flask, request\napp = Flask(__name__)\n\nlocations = [\n    \"Москва\",\n    \"Санкт-Петербург\",\n    \"Новосибирск\",\n    \"Екатеринбург\",\n    \"Казань\",\n    \"Нижний Новгород\",\n    \"Челябинск\",\n    \"Самара\",\n    \"Омск\",\n    \"Ростов-на-Дону\",\n    \"Уфа\",\n    \"Красноярск\",\n    \"Воронеж\",\n    \"Пермь\",\n    \"Волгоград\",\n    \"Краснодар\",\n    \"Волгоград\",\n    \"Саратов\",\n    \"Тюмень\",\n    \"Тольятти\",\n    \"Ижевск\",\n]\n\n\ndef get_cities():\n    ...\n\nif __name__ == '__main__':\n    app.run()\n"
+            }
+          },
+          "description_text" : "# Задачка 3 (на квери параметры)\n------------------------------\n\nВам предоставлен список городов. Выполните поиск когда пользователь запрашивает URL типа\n\n`/search/?s=са`\n\nФормат ответа – через запятую. Например:\n\n`Санкт-Петербург, Саратов`\n\nЕсли городов не найдено – вывести\n\n`Городов не найдено`\n\n### Как тестируются ответы:\n\nПриложение обрабатывает запрос к  `/search/?s=...`\n\nЗапрос к `/search/?s=мос` возвращает `Москва`\n\nЗапрос к `/search/?s=кра` возвращает `Красноярск, Краснодар`\n\nЗапрос к `/search/?s=санкт` возвращает `Санкт-Петербург`\n",
+          "description_format" : "MD",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "choiceOptions" : [
+            {
+              "text" : "flask run --host=0.0.0.0",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "flask run",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "flask run -h 0.0.0.0:8000",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "flask run -p 8000",
+              "status" : "CORRECT"
+            },
+            {
+              "text" : "flask run --host=127.0.0.1:8000",
+              "status" : "INCORRECT"
+            },
+            {
+              "text" : "flask run --port=8000",
+              "status" : "CORRECT"
+            }
+          ],
+          "isMultipleChoice" : true,
+          "name" : "another_port",
+          "files" : {
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : ""
+            }
+          },
+          "description_text" : "<html>\n\n<h2>Тест \"Другой порт\"</h2>\n\n<p>\n    Изучите в документации flask каким образам можно запустить wsgi-сервер на другом порту и ip адресе.\n    <br>\n    С помощью каких команд можно запустить встроенный wsgi-сервер на 8000 порту?\n</p>\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "choice"
+        },
+        {
+          "name" : "find_user",
+          "files" : {
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "from flask import Flask\n\napp = Flask(__name__)\n\n\ndef load_users():\n    from users import users\n    return users\n\n\n\n\nif __name__ == '__main__':\n    app.run()\n"
+            },
+            "tests/test_task.py" : {
+              "name" : "tests/test_task.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from task import app, load_users\nfrom lesson.utils import SkyproTestCase\n\nusers = load_users()\n\nclass TestCase(SkyproTestCase):\n\n    def get_key(self):\n        return \"173645\"\n\n    def test_users(self):\n        with app.test_client() as client:\n            resp = client.get('/users/1/')\n            self.assertNotEqual(404, resp.status_code, msg='Представление должно работать по урлу /users/1/')\n\n            resp = client.get('/users/fsdfsd/')\n            self.assertEqual(404, resp.status_code,\n                             msg='Представление должно обрабатывать сегмент урла как целое число')\n\n            not_found_str = 'Не найдено'\n\n            for i in (0, 11, 20, 100, 1000):\n                resp = client.get(f'/users/{i}/')\n\n                self.assertEqual(404, resp.status_code,\n                                 msg=f'Если по индексу не найден пользователь, то код ответ должен быть 404')\n                self.assertEqual(not_found_str, resp.get_data(True),\n                                 msg=f'Если по индексу не найден пользователь, то ответ должен быть {not_found_str}')\n\n            for i, user in enumerate(users, start=1):\n                resp = client.get(f'/users/{i}/')\n                expected = f'{user[\"last_name\"]} {user[\"first_name\"]}'\n\n                self.assertEqual(200, resp.status_code,\n                                 msg=f'По индексу {i} должен возвращаться код ответа 200')\n                self.assertEqual(expected, resp.get_data(True),\n                                 msg=f'По индексу {i} должен возвращаться ответ {expected}')\n"
+            },
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "tests/__init__.py" : {
+              "name" : "tests/__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "users.py" : {
+              "name" : "users.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "users = [\n  {\n    \"first_name\": \"Gordon\",\n    \"last_name\": \"Wong\",\n    \"gender\": \"male\"\n  },\n  {\n    \"first_name\": \"Church\",\n    \"last_name\": \"Blankenship\",\n    \"gender\": \"male\"\n  },\n  {\n    \"first_name\": \"Hester\",\n    \"last_name\": \"Battle\",\n    \"gender\": \"female\"\n  },\n  {\n    \"first_name\": \"Miranda\",\n    \"last_name\": \"Conner\",\n    \"gender\": \"female\"\n  },\n  {\n    \"first_name\": \"Meghan\",\n    \"last_name\": \"Strickland\",\n    \"gender\": \"female\"\n  },\n  {\n    \"first_name\": \"Osborne\",\n    \"last_name\": \"Jenkins\",\n    \"gender\": \"male\"\n  },\n  {\n    \"first_name\": \"Solis\",\n    \"last_name\": \"Larsen\",\n    \"gender\": \"male\"\n  },\n  {\n    \"first_name\": \"May\",\n    \"last_name\": \"Mcconnell\",\n    \"gender\": \"female\"\n  },\n  {\n    \"first_name\": \"Castaneda\",\n    \"last_name\": \"Rivers\",\n    \"gender\": \"male\"\n  },\n  {\n    \"first_name\": \"Rush\",\n    \"last_name\": \"Conway\",\n    \"gender\": \"male\"\n  }\n]\n"
+            },
+            "solution.py" : {
+              "name" : "solution.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from flask import Flask\n\napp = Flask(__name__)\n\n\ndef load_users():\n    from users import users\n    return users\n\n@app.route(\"/users/<int:uid>/\")\ndef get_user(uid):\n    users = load_users()\n\n    if uid < 1 or uid > len(users):\n        return 'Не найдено', 404\n\n    requested_user = users[uid-1]\n    return f'{requested_user[\"last_name\"]} {requested_user[\"first_name\"]}'\n\nif __name__ == '__main__':\n    app.run()\n"
+            }
+          },
+          "description_text" : "# Задача \"Поиск пользователя\"\n\nПрограммисту Гарри поставили задачу реализовать приложение, которое\n\nЧитает из `users.py` список пользователей.\n\nВозвращает по урлу `/users/<index>/` строку с фамилией и именем пользователя через пробел по индексу из списка пользователей.\n\nНапример, по урлу `/users/1/` вернется строка `Wong Gordon`\n\nЕсли такого индекса нет в списке, то приложение должно возвращать строку 'Не найдено' и код ответа 404.\n\nИндексы должны начинаться с 1, а не с 0, как в списках Python\n\nГарри трудился всю ночь, чтобы успеть к утреннему дедлайну, но уснул и не дописал часть кода. К счастью,\nты пришел в офис пораньше и можешь помочь ему закончить начатую работу вовремя.\n\nЗаполни все TODO и реализуй до конца представление `get_user`.\n\n### Тесты проверят:\n\nПредставление должно работать по урлу /users/1/\n\nПредставление должно обрабатывать сегмент урла как целое число\n\nПри запросах к `/users/0` `/users/11` `/users/20` `/users/100` `/users/1000` ответ должен содержать статус 404\n\nПри запросах к `/users/ааа` ответ должен содержать статус 404\n\nПри запросах к `/users/1` должно возвращаться `Wong Gordon`\n\nПри запросах к `/users/2` должно возвращаться `Blankenship Church`\n",
+          "description_format" : "MD",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "dictionary (key)",
+          "files" : {
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "from flask import Flask\n\napp = Flask(__name__)\n\nvocab = {\n    'cat': 'кошка',\n    'python': 'питон',\n    'flask': 'фляга',\n    'developer': 'разработчик',\n    'django': 'джанго',\n    'framework': 'фреймворк',\n    'package': 'библиотека',\n    'library': 'библиотека',\n}\n\n@app.route(\"/<key>/\")\ndef translate(key):\n    value = vocab.get(key, False)\n    if value:\n        return f\"Значение для ключа {key} - {value}\"\n    return \"Ключ не найден\", 404\n\n\nif __name__ == '__main__':\n    app.run()\n"
+            },
+            "tests/test_task.py" : {
+              "name" : "tests/test_task.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from task import app, vocab\nfrom lesson.utils import SkyproTestCase\n\nclass TestCase(SkyproTestCase):\n\n    def get_key(self):\n        return \"423304\"\n\n    def test_index(self):\n        with app.test_client() as client:\n            for key, value in vocab.items():\n                resp = client.get(f'/{key}/')\n                expected = f'Значение для ключа {key} - {value}'\n\n                self.assertEqual(200, resp.status_code,\n                                 msg=f'Урл /{key}/ должен возвращать код ответа 200')\n                self.assertEqual(expected, resp.get_data(True),\n                                 msg=f'Урл /{key}/ должен возвращать \"{expected}\"')\n\n            resp = client.get(f'/not_vacab_value/')\n            expected = 'Ключ не найден'\n\n            self.assertEqual(404, resp.status_code,\n                             msg=f'Для значений не из словаря представление должно возвращать код ответа 404')\n            self.assertEqual(expected, resp.get_data(True),\n                             msg=f'Для значений не из словаря представление должно возвращать \"{expected}\"')\n"
+            },
+            "__init__.py" : {
+              "name" : "__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "tests/__init__.py" : {
+              "name" : "tests/__init__.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : ""
+            },
+            "solution.py" : {
+              "name" : "solution.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : ""
+            }
+          },
+          "description_text" : "# Задача \"Словарь\"\n\nДан словарь `vocab`. Нужно реализовать приложение, которое выполняет поиск по ключу в этом словаре.\n\nНапишите представление, которое берет из урла текстовый сегмент, ищет по полученному значению сегмента ключ в\nсловаре `vocab` и возвращает <i>Значение для ключа &lt;значение переданного ключа&gt; - &lt;найденное по этому ключу значение в словаре&gt;</i>.\n\nЕсли такого ключа нет в словаре, то возвращает строку \"Ключ не найден\" и код ответа 404.\n\n### Тесты проверят:\n\nПри запросе `/cat` приложение ответит `Значение для ключа cat - кошка`\n\nПри запросе `/flask` приложение ответит `Значение для ключа flask - фляга`\n\nПри запросе `/python` приложение ответит `Значение для ключа python - питон`\n",
+          "description_format" : "MD",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "lesson/utils.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\n\nclass StatMixin:\n    def send_stat(self, result):\n        if result.wasSuccessful():\n            print(\"Задание выполнено! Ваш код:\",  self.get_key())\n\nclass SkyproTestCase(StatMixin, unittest.TestCase):\n    def run(self, *args, **kwargs):\n        result = super().run(*args, **kwargs)\n        self.send_stat(result)\n        return result\n"
+    },
+    {
+      "name" : "lesson/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "lesson/requirements.txt",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "flask"
+    },
+    {
+      "name" : "requirements.txt",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "flask"
+    }
+  ],
+  "version" : 11
+}

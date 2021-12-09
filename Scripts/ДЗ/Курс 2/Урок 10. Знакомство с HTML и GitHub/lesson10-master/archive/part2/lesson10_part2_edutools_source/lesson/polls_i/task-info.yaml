@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: b
+  is_correct: false
+- text: p
+  is_correct: false
+- text: i
+  is_correct: true
+- text: a
+  is_correct: false
+message_correct: Верно! Ваш код для платформы 987935
+message_incorrect: Неверно
+files:
+- name: __init__.py
+  visible: true

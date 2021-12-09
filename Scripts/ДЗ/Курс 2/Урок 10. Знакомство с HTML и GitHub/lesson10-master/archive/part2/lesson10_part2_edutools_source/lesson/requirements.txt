@@ -1,0 +1,4 @@
+flask
+beautifulsoup4
+bs4
+html5lib

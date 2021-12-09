@@ -1,0 +1,1 @@
+рython -m http.server 8000
